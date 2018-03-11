@@ -1,0 +1,47 @@
+html {
+background-color: white;
+font-size: 100%;
+}
+body {
+font-family: "Euphemia UCAS", sans-serif;
+line-height: 1.4;
+color: #083d6a;
+}
+
+a:link {
+color:#FF0000;
+}
+a:visited {
+color:#00FF00;
+}
+a:hover {
+color:#FF00FF;
+}
+a:active {
+color:#0000FF;
+}
+
+form
+{
+    display: flex;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    background-color: #a1a1e3;
+    justify-content: center;
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+#signupbutton {
+    align-self: flex-end;
+    width: 7rem;
+    height: 4rem;
+    font-size: 1.5rem;
+}
+
+input {
+    width: 10rem;
+}
