@@ -21,27 +21,51 @@ a:active {
 color:#0000FF;
 }
 
-form
-{
-    display: flex;
-    border-radius: 1.5rem;
-    flex-direction: column;
-    background-color: #a1a1e3;
-    justify-content: center;
-    padding: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 25rem;
-    margin-right: 25rem;
+#item2, #item4, #item6, #item8, #item10 {
+    font-size: 1.5rem;
+    text-align: right;
 }
 
+#item1 { grid-area: header;} 
+#item2 { grid-area: usernametext; }
+#item3 { grid-area: usernamebox; }
+#item4 { grid-area: passwordtext; }
+#item5 { grid-area: passwordbox; }
+#item6 { grid-area: firstnametext; }
+#item7 { grid-area: firstnamebox; }
+#item8 { grid-area: lastnametext; }
+#item9 { grid-area: lastnamebox; }
+#item10 { grid-area: emailtext; }
+#item11 { grid-area: emailbox; }
 #signupbutton {
-    align-self: flex-end;
+    grid-area: signupbutton; 
     width: 7rem;
     height: 4rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #083d6a;
+    justify-self: end;  
+}
+
+#grid-container {
+    display: inline-grid;
+    grid-template-areas:
+        ' header header '
+        ' usernametext usernamebox '
+        ' passwordtext passwordbox '
+        ' firstnametext firstnamebox '
+        ' lastnametext lastnamebox '
+        ' emailtext emailbox '
+        ' . signupbutton ';
+    grid-gap: 1rem;
+    background-color: #a1a1e3;
+    padding: 2rem;
+    margin: 2% 33% 2% 33%;
+    border-radius: 1rem;
+    align-items: center;
 }
 
 input {
     width: 10rem;
+    height: 1.5rem;
+    font-size: 1.5;
 }
